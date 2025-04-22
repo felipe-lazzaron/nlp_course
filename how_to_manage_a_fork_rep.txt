@@ -1,0 +1,51 @@
+⸻
+
+✅ 1. Adicione o repositório do professor como upstream (se for um fork):
+
+Se você já tem seu repositório (com suas alterações), adicione o dele como remoto:
+
+git remote add upstream https://github.com/tiagoft/nlp_course
+
+Você pode verificar os remotos com:
+
+git remote -v
+
+
+
+⸻
+
+✅ 2. Busque as atualizações do professor:
+
+git fetch upstream
+
+⸻
+
+✅ 4. Mescle a branch do professor com a sua:
+
+Se a branch principal for main:
+
+git merge upstream/main
+
+Se não houver conflitos reais (como você mencionou), isso será tranquilo e automático.
+
+⸻
+
+✅ 5. Continue seu trabalho normalmente
+
+Agora você consegue manter suas alterações, e ainda atualizar o código do professor sem “commitar” antes ou perder alterações locais.
+
+⸻
+
+📌 Dica extra
+
+Se quiser evitar conflitos mesmo com modificações locais não commitadas, você pode:
+
+git stash
+git pull upstream/main
+git stash pop
+
+Isso guarda temporariamente suas alterações (stash), puxa as novas do professor e reaplica suas mudanças depois.
+
+⸻
+
+Se quiser que eu veja seu caso real (estrutura de pastas ou comandos usados), posso adaptar os comandos exatos. Quer?
